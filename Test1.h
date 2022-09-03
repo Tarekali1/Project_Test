@@ -1,6 +1,12 @@
 #ifndef TEST1_H_INCLUDED
 #define TEST1_H_INCLUDED
 
-int Sum_values(int a , int b );
-int Multy(int a , int b);
+typedef enum
+{
+    ERROR_OK,
+    ERROR_NOK
+}Error_state;
+
+Error_state Sum_values(int a , int b ,int *value);
+Error_state Multy(int a , int b , int *value);
 #endif // TEST1_H_INCLUDED
